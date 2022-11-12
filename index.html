@@ -4,15 +4,138 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>esaturn/flaticon-uicons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='uicons.css'>
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      background-image: url(/bg.5f4e1cd03a88761240785741f9245aee.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    main{
+      margin: 0 auto;
+      max-width:2140px;
+      width: 80%;
+      height: 400px;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+    }
+    .text{
+      padding-top: 100px;
+    }
+    h1{
+      color: #374957;
+      font-size:34px;
+    }
+    p{
+      color: #6093c3 ;
+      font-size:14px;
+      margin-top: 12px;
+    }
+    .link{
+      width:60%;
+      margin: 100px auto;
+      padding-bottom: 100px;
+    }
+    .link h1{
+      text-align: left;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .link p{
+      text-align: left;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+    .link div{
+      font-size:22px;
+      margin: 0 auto;
+      width:231px;
+      display: inline;
+      height: 39px;
+      width: 39px;
+      
+    }
+    .link div i{
+      width: 22px;
+      height: 22px;
+    }
+    .link div input{
+      padding: 10px 5px 10px 5px;
+      width:100%;
+      display: inline-block;
+      margin-bottom: 20px;
+      border:1px solid #add9ef;
+      border-radius: 3px;
+      pointer-events: none;
+    }
+    .link button{
+      padding: 9px 10px 9px 10px;
+      border:1px solid #add9ef;
+      border-radius: 3px;
+      cursor: pointer;
+      background-color: #add9ef;
+      width:100px;
+      margin-bottom: 20px;
+    }
+    .test-icons i{
+      font-size:38px;
+      margin: 8px;
+    }
+    @media (max-width:900px){
+      .link{
+        width: 80%;
+      }
+    }
+  </style>
+  
 </head>
 <body>
-  <i class="fi fi-br-search"></i>
-  <i class="fi fi-ss-search"></i>
-  <i class="fi fi-rr-search"></i>
-  <i class="fi fi-sr-search"></i>
-  <i class="fi fi-rs-search"></i>
-  <i class="fi fi-bs-search"></i>
+  <main>
+    <div class="text">
+      <h1>The best Interface icons for your projects</h1>
+      <p>8,000+ SVG and web font-optimal vector-based icons for web, iOS, and Android applications.</p>
+    </div>
+    <div class="link">
+      <h1>CDN</h1>
+      <p class="font-sm">Use the <strong>regular/bold/solid</strong> icons pack by adding the link to the &lt;head&gt; section of your web or through an @import in your CSS.</p>
+      <p>for list icons: <a target="_blank" href="https://www.flaticon.com/uicons/interface-icons">VISIT</a></p>
+      <div>
+        <!-- <input type="text" placeholder=""> -->
+        <input class="" type="text" readonly="" value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/esaturn/flaticon-uicons@V2.0.0/uicons.css'>">
+        <button><i class="fi fi-rr-copy-alt"></i></button>
+      </div>
+
+      <h1>TEST ICONS</h1>
+      <div class="test-icons">
+        <i class="fi fi-ss-laptop-code"></i>
+        <i class="fi fi-ts-laptop-code"></i>
+        <i class="fi fi-bs-laptop-code"></i>
+        <i class="fi fi-rs-laptop-code"></i>
+        <i class="fi fi-rr-laptop-code"></i>
+        <i class="fi fi-tr-laptop-code"></i>
+      </div>
+
+
+    </div>
+  </main>
+  <script>
+    let btncopy = document.querySelector(".link button");
+    let textcopy = document.querySelector(".link div input");
+    let source = `<!-- from:https://github.com/esaturn --> \n <!-- thanks: https://www.flaticon.com/uicons/interface-icons --> \n`
+
+    btncopy.addEventListener("click", CopyText(textcopy.value))
+    function CopyText(thetext){
+      navigator.clipboard.writeText(source + thetext)
+    };
+  </script>
 </body>
 </html>

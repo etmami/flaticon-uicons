@@ -1,11 +1,6 @@
-@import url(assets/bold-rounded/uicons-bold-rounded.css);
-
-@import url(assets/bold-straight/uicons-bold-straight.css);
-
-@import url(assets/regular-rounded/uicons-regular-rounded.css);
-
-@import url(assets/regular-straight/uicons-regular-straight.css);
-
-@import url(assets/solid-rounded/uicons-solid-rounded.css);
-
-@import url(assets/solid-straight/uicons-solid-straight.css);
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css');
