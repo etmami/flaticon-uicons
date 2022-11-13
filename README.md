@@ -2,4 +2,4 @@
 
 https://www.jsdelivr.com/package/gh/esaturn/flaticon-uicons
 
-V2.0.1
+V2.1.1
