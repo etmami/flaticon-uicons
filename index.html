@@ -14,16 +14,18 @@
       padding: 0;
       margin: 0;
     }
+    a{
+      text-decoration: none;
+    }
     body{
       background-image: url(bg.5f4e1cd03a88761240785741f9245aee.svg);
-      background-position: center;
+      background-size: cover;
       background-repeat: no-repeat;
     }
     main{
       margin: 0 auto;
       max-width:2140px;
       width: 80%;
-      height: 400px;
       text-align: center;
       font-family: 'Inter', sans-serif;
     }
@@ -39,10 +41,17 @@
       font-size:14px;
       margin-top: 12px;
     }
+    .soocial{
+      margin-top:30px;
+      font-size:32px;
+    }
+    .soocial i{
+      margin: 10px;
+      color:#374957;
+    }
     .link{
       width:60%;
       margin: 100px auto;
-      padding-bottom: 100px;
     }
     .link h1{
       text-align: left;
@@ -72,22 +81,28 @@
       width:100%;
       display: inline-block;
       margin-bottom: 20px;
-      border:1px solid #add9ef;
+      border:1px solid #374957;
       border-radius: 3px;
       pointer-events: none;
     }
     .link button{
       padding: 9px 10px 9px 10px;
-      border:1px solid #add9ef;
+      border:1px solid #374957;
       border-radius: 3px;
       cursor: pointer;
-      background-color: #add9ef;
+      background-color: #374957;
       width:100px;
       margin-bottom: 20px;
+      color: #fff;
     }
     .test-icons i{
       font-size:38px;
       margin: 8px;
+    }
+    footer{
+      text-align: center;
+      padding: 10px;
+      font-size: 18px;
     }
     @media (max-width:900px){
       .link{
@@ -102,14 +117,19 @@
     <div class="text">
       <h1>The best Interface icons for your projects</h1>
       <p>8,000+ SVG and web font-optimal vector-based icons for web, iOS, and Android applications.</p>
+      <div class="soocial">
+        <a target="_blank" href="https://twitter.com/_frs99"><i class="fi fi-brands-twitter"></i></a>
+        <a target="_blank" href="https://github.com/esaturn/flaticon-uicons"><i class="fi fi-brands-github"></i></a>
+      </div>
     </div>
     <div class="link">
       <h1>CDN</h1>
-      <p class="font-sm">Use the <strong>regular/bold/solid</strong> icons pack by adding the link to the &lt;head&gt; section of your web or through an @import in your CSS.</p>
-      <p>for list icons: <a target="_blank" href="https://www.flaticon.com/uicons/interface-icons">VISIT</a></p>
+      <p class="font-sm">Use the <strong>regular/bold/solid ( All icons )</strong> icons pack by adding the link to the &lt;head&gt; section of your web.</p>
+      <p class="list">For icons list: <a target="_blank" href="https://www.flaticon.com/uicons/interface-icons">VISIT</a></p>
+      
       <div>
         <!-- <input type="text" placeholder=""> -->
-        <input class="" type="text" readonly="" value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/esaturn/flaticon-uicons@V2.1.0/uicons.css'>">
+        <input class="" type="text" readonly="" value="<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/esaturn/flaticon-uicons@V2.1.1/uicons.css'>">
         <button><i class="fi fi-rr-copy-alt"></i></button>
       </div>
 
@@ -128,15 +148,30 @@
 
     </div>
   </main>
+  <footer>
+    <p>Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a></p>
+    <p>My love <a href="https://github.com/esaturn/">Esaturn</a></p>
+  </footer>
   <script>
     let btncopy = document.querySelector(".link button");
     let textcopy = document.querySelector(".link div input");
     let source = `<!-- from:https://github.com/esaturn --> \n <!-- thanks: https://www.flaticon.com/uicons/interface-icons --> \n`
 
-    btncopy.addEventListener("click", CopyText(textcopy.value))
-    function CopyText(thetext){
-      navigator.clipboard.writeText(source + thetext)
-    };
+    // btncopy.addEventListener("click", CopyText(textcopy.value))
+
+    // function CopyText(thetext){
+    //   navigator.clipboard.writeText(source + thetext)
+    //   console.log(btncopy.innerHTML)
+    //   // btncopy.innerHTML = ""
+    //   // btncopy.innerHTML = `<i class="fi fi-br-check"></i>`
+    // };
+
+    btncopy.addEventListener("click", () => {
+      navigator.clipboard.writeText(source + textcopy.value)
+      console.log(btncopy.innerHTML)
+      btncopy.innerHTML = ""
+      btncopy.innerHTML = `<i class="fi fi-br-check"></i>`
+    });
   </script>
 </body>
 </html>
