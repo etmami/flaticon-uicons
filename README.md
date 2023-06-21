@@ -11,6 +11,8 @@ Using this project is straightforward and simple. Developers can use the links p
 Not only do these amazing packs enhance the possibilities of creative website design, but they also offer convenience and efficiency for developers to expedite their projects.
 
 Enjoy exploring this project and benefit from the versatility of the available icons to enhance your web design experience!"
+for more:
+https://etmami.github.io/flaticon-uicons/
 
 https://www.jsdelivr.com/package/gh/etmami/flaticon-uicons
 
